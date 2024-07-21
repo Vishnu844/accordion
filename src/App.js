@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Accordion from "./Accordion";
+import Modal from "./Modal";
+import Dropdown from "./Dropdown";
 
 function App() {
+  const accordionItems = [
+    {
+      id: 1,
+      content: "content-1",
+    },
+    {
+      id: 2,
+      content: "content-2",
+    },
+    {
+      id: 3,
+      content: "content-3",
+    },
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Accordion items={accordionItems} /> */}
+      {/* <Modal/> */}
+      <Dropdown />
+    </>
   );
 }
 
